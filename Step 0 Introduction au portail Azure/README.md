@@ -14,7 +14,7 @@ Pour une première utilisation, vous allez être redirigé vers la page de
 connexion. Vous devez utiliser le compte Microsoft avec lequel vous avez créé
 votre abonnement Azure pour vous connecter au portail.
 
- Media/img1.png
+ !Media/img1.png
 
 
 

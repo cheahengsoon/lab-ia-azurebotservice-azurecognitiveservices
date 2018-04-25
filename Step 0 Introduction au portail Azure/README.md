@@ -117,30 +117,4 @@ commande de poutine à notre bot.
 
 # End
 
-[img1] 
-Test du bot
-
- 
-
-Lorsque vous cliquez sur le
-bouton « Go to resource », vous accédez à l’interface de gestion de
-Web App Bot. Pour tester ce dernier, vous devez cliquer sur « Test in Web
-Chat ». Une fenêtre de chat va s’afficher. Vous pouvez commencer à converser
-avec votre bot.
-
- 
-
-Conclusion
-
- 
-
-Vous venez de créer votre premier
-bot en utilisant le portail Azure. Dans la prochaine étape, nous  verrons comment intégrer un processus de
-commande de poutine à notre bot. 
-
-
-78 7980Azure va démarrer la création et81le déploiement des ressources et services nécessaires à l’exécution d’un bot. 8283Une fois cette tâche finalisée.84Une notification sera affichée dans les notifications avec le statut du déploiement85et des boutons permettant d’accéder directement à la ressource créé et d’épingler86vote bot dans le tableau de bord8788 89909192 9394Vous allez épingler votre95ressource dans le tableau de bord, ensuite cliquer sur « Go to resource ».9697 9899 100101Test du bot102103 104105Lorsque vous cliquez sur le106bouton « Go to resource », vous accédez à l’interface de gestion de107Web App Bot. Pour tester ce dernier, vous devez cliquer sur « Test in Web108Chat ». Une fenêtre de chat va s’afficher. Vous pouvez commencer à converser109avec votre bot.110111 112113Conclusion114115 116117Vous venez de créer votre premier118bot en utilisant le portail Azure. Dans la prochaine étape, nous  verrons comment intégrer un processus de119commande de poutine à notre bot. 120121
-
-# End
-
 [img1]: Media/img1.png

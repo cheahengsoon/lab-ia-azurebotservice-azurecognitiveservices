@@ -24,10 +24,12 @@ Le portail Azure offre une interface utilisateur permettant de gérer ses servic
 menu dispose d’une zone de recherche avec autosuggestion, permettant d’effectuer
 des recherches dans la panoplie de ressources et services que compte Azure. On
 trouve également des boutons permettant de customiser l’interface du portail. 
+
 2 - Le menu vertical à gauche donne un accès au
 bouton utilisé pour la création d’une ressource. Nous allons fréquemment utiliser
 ce bouton. En dessous, une liste de favoris permettant d’accéder rapidement aux
 ressources et services créés.
+
 3 - Au centre, nous avons le tableau de bord. Ce
 dernier offrira une vue générale des services récemment créés. Vous pouvez
 également épingler vos services les plus utilisés sur le tableau de bord pour
@@ -69,7 +71,7 @@ avec votre bot.
 
 Vous venez de créer votre premier bot en utilisant le portail Azure. Dans la prochaine étape, nous verrons comment intégrer un processus de commande de poutine à notre bot. 
 
-# End
+# Fin
 
 [img1]: Media/img1.png
 [img2]: Media/img2.png

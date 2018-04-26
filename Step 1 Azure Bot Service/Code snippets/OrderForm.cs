@@ -7,10 +7,14 @@ using System.Web;
 
 namespace Microsoft.Bot.Sample.SimpleEchoBot
 {
+    /// <summary>
+    /// Formulaire de commade d'une poutine en utilisant FormFlow
+    /// </summary>
     [Serializable]
     public class OrderForm
     {
-
+        #region questions
+        //Différentes questions qui seront posées à l'utilisateur
         [Prompt("Veuillez selectionner votre type de poutine ? {||}")]
         public TypeOptions Type;
         [Prompt("Veuillez choisir la taille ? {||}")]
@@ -21,8 +25,9 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
         public List<ExtraOptions> Extras;
         [Prompt("Veuillez saisir votre nom ? {||}")]
         public string Name { get; set; }
+        #endregion
 
-
+        //Constuction du formulaire de commade
         public static IForm<OrderForm> BuildForm()
         {
 
@@ -36,6 +41,7 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
                     .Build();
         }
 
+        //Définition de la prochaine question en fonction du choix de l'utilisateur pour les extras
         private static NextStep SetNextAfterAddExtra(object value, OrderForm state)
         {
            
@@ -53,7 +59,8 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
 
     }
 
-
+    #region options 
+    //Options qui seront proposées pour chaque question
     public enum TypeOptions {
         [Describe(title:"Specialité de la maison", subTitle: "Fromage en grains, mozzarella, boeuf braisé et sauce au vin rouge.", 
             image: "http://rdonfack.developpez.com/images/maison.PNG",message:"Maison")]
@@ -82,6 +89,6 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
         Porc_effiloché,
         Steak
     }
-   
-   
+#endregion
+
 }

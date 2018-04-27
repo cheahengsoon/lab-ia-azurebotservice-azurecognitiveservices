@@ -70,6 +70,72 @@ Vous devez cliquer sur Publish pour démarrer le déploiement du service.  Une f
 
 Ce que nous allons conserver et que nous allons utiliser plus tard dans notre bot est l’ApplicationId (dans la zone No 1) et la SubscriptionKey (dans la zone No 2).
 
+# Création du bot
+
+Nous allons maintenant créer notre bot et utiliser le service que nous venons de mettre en place. Rendez-vous dans le portail Azure pour créer le bot.
+
+Vous allez cliquer sur créer une nouvelle ressource. Vous allez sélectionner « AI + Cognitive
+Services », ensuite « Web App Bot ».
+
+Le formulaire de création du Bot va s’afficher. Remplissez les informations. 
+
+Vous devez cliquer sur le champ Bot template, ensuite sélectionner le template « Question and Answer » dans la liste des modèles de bot.
+
+![img7][img7]  
+
+Cliquez ensuite sur Select et enfin sur Create. Azure va procéder à la création et au déploiement des ressources nécessaires au fonctionnement de votre bot. 
+
+Une fois que vous aurez la notification annonçant la fin du déploiement, cliquez sur le bouton pour épingler la nouvelle ressource sur votre tableau de bord et cliquez ensuite sur le bouton pour afficher la ressource.
+
+# Configuration du bot pour se connecter au service QnA Maker.
+
+Si vous accédez à la fenêtre de chat permettant de tester votre bot, vous serez invité à configurer le bot pour se connecter à QnA Maker.
+
+![img8][img8] 
+ 
+Pour cela, vous devez modifier les paramètres de configuration de votre application. Il s’agit plus précisément des paramètres QnAKnowledgebaseId et QnASubscriptionKey.
+
+Pour modifier ces paramètres, vous allez saisir dans la fenêtre de recherche au-dessus du menu vertical à gauche « App », ensuite sélectionner Application Settings. Vous allez scroller vers le bas pour retrouver les champs QnAKnowledgebaseId et QnASubscriptionKey.
+
+![img9][img9]  
+
+Vous devez copier et coller les informations précédentes dans les champs correspondants. 
+ 
+Cliquez ensuite sur enregistrer pour que les modifications soient prises en compte.
+
+![img10][img10] 
+
+Une fois votre application mise à jour, revenez dans l’interface de chat et testez votre bot :
+
+![img11][img11]  
+
+C’est aussi simple que ça l’intégration de QnA Maker avec un bot.
+
+Nous allons jeter un coup d’œil au code du bot. Accédez à l’éditeur de code en ligne pour votre bot. Ouvrez le fichier BasicQnAMakerDialog.cs. Il se trouve dans le dossier Dialogs.
+
+Voici le code permettant d’appeler votre service QnA Maker.
+
+```cs
+// For more information about this template visit http://aka.ms/azurebots-csharp-qnamaker
+    [Serializable]
+    public class BasicQnAMakerDialog : QnAMakerDialog
+    {
+        // Go to https://qnamaker.ai and feed data, train & publish your QnA Knowledgebase.        
+        // Parameters to QnAMakerService are:
+        // Required: subscriptionKey, knowledgebaseId, 
+        // Optional: defaultMessage, scoreThreshold[Range 0.0 – 1.0]
+        public BasicQnAMakerDialog() : base(new QnAMakerService(new QnAMakerAttribute(Utils.GetAppSetting("QnASubscriptionKey"), Utils.GetAppSetting("QnAKnowledgebaseId"), "No good match in FAQ.", 0.5)))
+        {}
+    
+    }
+```
+
+
+Conclusion
+
+Vous venez de mettre en place un service QnA Maker et l’utiliser dans votre bot. Avec ce service il est assez simple de mettre en place un agent conversationnel capable de répondre aux questions des utilisateurs.
+
+
 # Fin
 
 [img1]: Media/img1.png
@@ -80,3 +146,6 @@ Ce que nous allons conserver et que nous allons utiliser plus tard dans notre bo
 [img6]: Media/img6.PNG
 [img7]: Media/img7.png
 [img8]: Media/img8.png
+[img9]: Media/img9.png
+[img10]: Media/img10.png
+[img11]: Media/img11.png

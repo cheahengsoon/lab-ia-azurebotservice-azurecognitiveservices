@@ -1,10 +1,10 @@
 # Introduction
 
-Cette étape du laboratoire permettra de modifier son bot pour intégrer un service de commande. Ce service de commande va permettre de bot de guider l’utilisateur dans un processus de commande d’une poutine. A la fin de cette étape, vous serez en mesure d’utiliser l’éditeur en ligne et FormFlow pour mettre en place une conversation guidée dans votre bot.
+Cette étape du laboratoire permettra de modifier son bot pour intégrer un service de commande. Ce service de commande va permettre au bot de guider l’utilisateur dans un processus de commande d’une poutine. A la fin de cette étape, vous serez en mesure d’utiliser l’éditeur en ligne et FormFlow pour mettre en place une conversation guidée dans votre bot.
 
 # Qu’est-ce que FormFlow 
 
-Imaginez que vous devez mettre en place un bot qui va guider un client dans la commande d’une Pizza à partir d’un large catalogue de choix avec des options : quelles questions doivent être posées, quelles questions ne doivent pas être posées en fonction des réponses du client, quel doit être la prochaine question en fonction du choix du client, quand revenir en arrière, comment permettre au client de modifier ses choix, quand est-ce que la conversation doit être interrompue, etc. La mise sur pied d’un algorithme qui permettra de guider l’utilisateur de façon optimale en utilisant Dialogs peut s’avérer assez complexe.
+Imaginez que vous devez mettre en place un bot qui va guider un client dans la commande d’une Pizza à partir d’un large catalogue de choix avec des options : quelles questions doivent être posées, quelles questions ne doivent pas être posées en fonction des réponses du client, quelle doit être la prochaine question en fonction du choix du client, quand revenir en arrière, comment permettre au client de modifier ses choix, quand est-ce que la conversation doit être interrompue, etc. La mise sur pied d’un algorithme qui permettra de guider l’utilisateur de façon optimale en utilisant Dialogs peut s’avérer assez complexe.
 
 C’est pour fournir une solution à cette problématique que Microsoft a mis en place FormFlow. Il s’agit d’une fonctionnalité disponible avec le SDK Bot Builder pour .NET, qui permet de générer automatiquement « les dialogues » qui sont nécessaires pour mettre en place une conversation guidée.
 
@@ -297,15 +297,14 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
 
 Édition du fichier .csproj
 
-```cs
-  <Compile Include="Dialogs\OrderFormDialog.cs" />
-  <Compile Include="Forms\OrderForm.cs" />
-```
-
 Éditez le fichier Microsoft.Bot.Sample.SimpleEchoBot.csprj. Recherchez « <Compile Include="Dialogs\EchoDialog.cs" /> » en utilisant le raccourci clavier « Ctrl + f ».
 
 Ajoute à la suite de cette ligne, les deux lignes de code suivantes, afin que nos nouveaux fichiers soient pris en compte pendant la génération du bot :
 
+```cs
+  <Compile Include="Dialogs\OrderFormDialog.cs" />
+  <Compile Include="Forms\OrderForm.cs" />
+```
 
 # Génération de du bot
 
@@ -329,7 +328,7 @@ Accédez à la fenêtre de chat et testez votre bot.
 
 ![img5][img5]
  
-# Utilisation du Channels Skype
+# Utilisation du Channel Skype
 
 Vous pouvez permettre l’accès à votre bot à travers divers canaux de communication. Nous verrons comment le faire pour Skype.
 

@@ -73,10 +73,10 @@ Ce que nous allons conserver et que nous allons utiliser plus tard dans notre bo
 # Fin
 
 [img1]: Media/img1.png
-[img2]: Media/img2.png
-[img3]: Media/img3.png
-[img4]: Media/img4.png
-[img5]: Media/img5.png
-[img6]: Media/img6.png
+[img2]: Media/img2.PNG
+[img3]: Media/img3.PNG
+[img4]: Media/img4.PNG
+[img5]: Media/img5.PNG
+[img6]: Media/img6.PNG
 [img7]: Media/img7.png
 [img8]: Media/img8.png

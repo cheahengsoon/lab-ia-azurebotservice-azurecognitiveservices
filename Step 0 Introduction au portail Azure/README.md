@@ -8,7 +8,7 @@ charge.
 
 # Accès au portail 
 
-Le portail Azure est accessible via le lien portal.azure.com/.
+Le portail Azure est accessible via le lien https://portal.azure.com/.
 Pour une première utilisation, vous allez être redirigé vers la page de
 connexion. Vous devez utiliser le compte Microsoft avec lequel vous avez créé
 votre abonnement Azure pour vous connecter au portail.
@@ -18,7 +18,7 @@ votre abonnement Azure pour vous connecter au portail.
 
 # Description du portail
 
-Le portail Azure offre une interface utilisateur permettant de gérer ses services Azure. Par défaut il dispose :
+Le portail Azure offre une interface utilisateur permettant de gérer ses services Azure. Par défaut, il dispose :
 
 1 - Un menu horizontal affiché en haut de page. Ce
 menu dispose d’une zone de recherche avec autosuggestion, permettant d’effectuer
@@ -60,7 +60,7 @@ Vous allez épingler votre ressource dans le tableau de bord, ensuite cliquer su
 # Test du bot
 
  
-Lorsque vous cliquez sur le bouton « Go to resource », vous accédez à l’interface de gestion de
+Lorsque vous cliquez sur le bouton « Go to resource », vous accédez à l’interface de gestion de votre
 Web App Bot. Pour tester ce dernier, vous devez cliquer sur « Test in Web
 Chat ». Une fenêtre de chat va s’afficher. Vous pouvez commencer à converser
 avec votre bot.

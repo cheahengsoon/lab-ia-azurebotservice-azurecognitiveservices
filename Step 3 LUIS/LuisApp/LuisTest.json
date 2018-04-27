@@ -1,0 +1,104 @@
+{
+  "luis_schema_version": "2.3.0",
+  "versionId": "0.1",
+  "name": "LuisTest",
+  "desc": "application luis pour un restaurant de poutine",
+  "culture": "fr-ca",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Order.Poutine"
+    },
+    {
+      "name": "Restaurant.Information"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "aurevoir",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "c'est quoi une poutine",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "comment vous contacter",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "fin de la conversation",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "j'ai faim",
+      "intent": "Order.Poutine",
+      "entities": []
+    },
+    {
+      "text": "j'aimerais avoir une poutine classique grande",
+      "intent": "Order.Poutine",
+      "entities": []
+    },
+    {
+      "text": "je souhaiterais avoir une poutine",
+      "intent": "Order.Poutine",
+      "entities": []
+    },
+    {
+      "text": "je veux commander une poutine",
+      "intent": "Order.Poutine",
+      "entities": []
+    },
+    {
+      "text": "ou êtes vous situé?",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "quelle est la composition d'une poutine",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "quelle est votre localisation",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "quelles sont vos heures d'ouverture",
+      "intent": "Restaurant.Information",
+      "entities": []
+    },
+    {
+      "text": "quitter",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "servez moi une poutine",
+      "intent": "Order.Poutine",
+      "entities": []
+    },
+    {
+      "text": "une poutine pour moi s'il vous plait",
+      "intent": "Order.Poutine",
+      "entities": []
+    }
+  ]
+}

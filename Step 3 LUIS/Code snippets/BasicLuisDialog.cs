@@ -29,14 +29,14 @@ namespace Microsoft.Bot.Sample.LuisBot
         [LuisIntent("Order.Poutine")]
         public async Task OrderPoutineIntent(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("J'ai detecté que vous voullez commander.");
+            await context.PostAsync("J’ai détecté que vous voulez commander.");
             context.Wait(MessageReceived);
         }
 
         [LuisIntent("Restaurant.Information")]
         public async Task RestaurantInformationIntent(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("J'ai detecté que vous voullez obtenir des informations sur notre restaurant.");
+            await context.PostAsync("J'ai détecté que vous voulez obtenir des informations sur notre restaurant.");
             context.Wait(MessageReceived);
         }
     

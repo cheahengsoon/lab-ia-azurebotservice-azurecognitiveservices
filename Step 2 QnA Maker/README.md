@@ -18,7 +18,7 @@ C’est pour répondre à ce besoin que Microsoft a mis en place QnA Maker. Avec
 
 Concrètement, QnA Maker est  une API REST et un service web permettant de créer et entrainer une intelligence artificielle qui sera en mesure de répondre aux questions d’un utilisateur à travers une conversation en langage naturel. 
 
-QnA Maker offre une interface graphique permettant de créer son service, le peupler avec des Questions/Réponses, l’entrainer en exploitant les services de machine learning de Microsoft et le publier afin de l’utiliser via un bot.  Aucune connaissance en programmation n’est nécessaire pour créer un service.  
+QnA Maker offre une interface graphique permettant de créer son service, le peupler avec des questions/réponses, l’entrainer en exploitant les services de machine learning de Microsoft et le publier afin de l’utiliser via un bot.  Aucune connaissance en programmation n’est nécessaire pour créer un service.  
 
 ![img1][img1]
  
@@ -36,7 +36,7 @@ Vous avez trois options pour le contenu de votre service :
 
 2 - Vous pouvez également fournir des fichiers de FAQ au format .tsv, .pdf, .doc, .docx and .xlsx ou des manuels de produit au format .pdf. Ceux-ci doivent également respecter un certain formatage. Pour notre test, nous allons utiliser le fichier PoutineFAQ.tsv. Vous devez donc le télécharger et l’uploader.
 
-3 - Saisir soit même les questions/reponses
+3 - Saisir soit même les questions/reponses.
 
 # Créer sa base de connaissance.
 
@@ -56,7 +56,7 @@ L’espace numéro 1 est la fenêtre de chat. Lorsque vous allez saisir une ques
 Une fois les tests achevés, cliquez sur « Save and retrain », pour que QnA Maker applique ses algorithmes de machines learning pour entrainer votre service et améliorer sa précision.
 Gardez à l’esprit que vous devez entrainer votre service chaque fois que vous effectuez des modifications.
 
-#Publier le service
+# Publier le service
 
 Une fois que vous êtes satisfait des résultats suite à l’entrainement de votre service, vous devez le publier. La publication de votre service va permettre son déploiement en production. À partir de ce moment, toutes les modifications seront désormais accessibles aux clients qui utilisent le service.
 
